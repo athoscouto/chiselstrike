@@ -64,7 +64,7 @@ pub struct Opt {
     pub chisel_secret_location: Option<String>,
 
     /// Sets secrets polling period in seconds (can be float).
-    #[structopt(long, default_value = "1")]
+    #[structopt(long, default_value = "30")]
     pub secrets_polling_period_s: f32,
 
     #[structopt(long)]
