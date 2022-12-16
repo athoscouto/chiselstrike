@@ -16,3 +16,9 @@ members = [
 
 # This is required to nest workspaces https://github.com/rust-lang/cargo/issues/5042
 exclude = ["third_party/deno"]
+
+[profile.release]
+    lto = true
+    codegen-units = 1
+    opt-level = "z"
+    strip = true
